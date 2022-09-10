@@ -87,7 +87,7 @@ public class Mensa extends RESTService {
    * getDishRatings
    *
    * 
-   * @param {id}  a String
+   * @param id  a String
    * 
    * @return Response 
    * 
@@ -101,7 +101,7 @@ public class Mensa extends RESTService {
        @ApiResponse(code = HttpURLConnection.HTTP_NOT_FOUND, message = "dish_not_found")
   })
   @ApiOperation(value = "getDishRatings", notes = " ")
-  public Response getDishRatings(@PathParam("{id}") String {id}) {
+  public Response getDishRatings(@PathParam("id") String id) {
 
 
 
