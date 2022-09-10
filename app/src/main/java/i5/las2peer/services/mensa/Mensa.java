@@ -116,10 +116,12 @@ public class Mensa extends RESTService {
 
     // ratings
     boolean ratings_condition = true;
-    if(ratings_condition) {
-      JSONObject ratings = new JSONObject();
+    if(id.equals("1") {
+      JSONArray ratings = new JSONArray();
 
-      
+      JSONObject o = new JSONObject(); 
+      o.put("comment", "Delicious!"); 
+      ratings.add(o);
 
       return Response.status(HttpURLConnection.HTTP_OK).entity(ratings.toJSONString()).build();
     }
